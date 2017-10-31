@@ -3,7 +3,8 @@ def reverse_each_word(input_string)
     element.reverse
   end
   output_string = input_string.join(" ")
-  end
+  output_string
+end
 
 
 
