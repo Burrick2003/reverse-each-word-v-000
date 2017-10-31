@@ -1,12 +1,5 @@
 def reverse_each_word(input)
-  array = []
-  array = input.split(" ")
-  array.map_with_index do |element, index|
-    array[index] = array[index].reverse
-  end
-  output = array.join(" ")
-  output
-
+  input.split.collect {|element| element.reverse}.join(" ")
 end
 
 
