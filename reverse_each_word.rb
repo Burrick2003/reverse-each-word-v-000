@@ -1,9 +1,12 @@
-def reverse_each_word(input_string)
-  input_string.split.collect do |element|
-    element.reverse
+def reverse_each_word(input)
+  array = []
+  array = input.split(" ")
+  array.each_with_index do |element, index|
+    array[index] = array[index].reverse
   end
-  output_string = input_string.join(" ")
-  output_string
+  output = array.join(" ")
+  output
+
 end
 
 
